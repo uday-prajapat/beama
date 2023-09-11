@@ -1,0 +1,227 @@
+.top-header-background {
+    background: var(--sky-blue);
+    padding: 10px 0;
+
+    .top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .address {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    padding-right: 20px;
+
+                    a {
+                        color: var(--white);
+
+                        font-size: 16px;
+                        font-weight: 500;
+
+                        img {
+                            vertical-align: middle;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .services-tag {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    padding-left: 20px;
+
+                    a {
+                        color: var(--white);
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.header-background {
+    background: var(--white);
+    border-bottom: 1px solid var(--white);
+
+    &.fixed-header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 99;
+
+        border-bottom: none;
+    
+        .header {
+            .menu {
+                > ul {
+                    > li {
+
+                        .white-search{
+                            width: 24px;
+                            display: block;
+                        }
+                        .black-search{
+                            display: none;
+                        }
+                       > a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .hamburger {
+            display: none;
+
+            img {
+                width: 25px;
+                display: block;
+            }
+        }
+
+        .menu>ul {
+            display: flex;
+            align-items: center;
+
+            >li {
+                position: relative;
+                padding: 40px 10px;
+                .white-search{
+                    display: none;
+                }
+
+                &:hover ul {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: rotateX(0);
+                }
+
+                ul {
+                    position: absolute;
+                    left: 0;
+                    top: 100px;
+                    z-index: 1;
+                    background: var(--white);
+                    padding: 10px 20px;
+                    width: 200px;
+
+                    opacity: 0;
+                    visibility: hidden;
+
+                    transform: translateY(5%);
+                    transition: transform .4s, opacity .1s;
+
+                    li {
+                        padding: 5px 0;
+
+                        a {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 30px;
+                        }
+
+                        &:hover a {
+                            color: var(--sky-blue);
+
+                        }
+
+                    }
+                }
+
+
+
+
+
+                &:hover .down-arrow-blue {
+                    display: block;
+                }
+
+                &:hover .down-arrow {
+                    display: none;
+                }
+
+                .search-icon {
+                    width: 25px;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+
+                    &:hover a {
+                        color: var(--white);
+                    }
+padding: 0 0 0 15px;
+                    a {
+                        color: var(--white);
+                        background: var(--sky-blue);
+                        padding: 15px 20px;
+                        border-radius: 5px;
+                        transition: 0.5s all ease;
+
+
+
+                        &:hover {
+
+                            background: var(--black-sads);
+                        }
+                    }
+                }
+
+                &:hover {
+                    >a {
+                        color: var(--sky-blue);
+                    }
+                }
+
+
+
+
+                a {
+                    transition: 0.5s all ease;
+                    color: var(--black);
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 400;
+
+                    img {
+                        width: 15px;
+                        display: block;
+                    }
+
+                    .down-arrow-blue {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
