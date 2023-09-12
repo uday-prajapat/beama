@@ -50,7 +50,8 @@
         <div class="container">
             <div class="header">
                 <div class="logo">
-                    <a href="#"><img src="./image/logo.png" alt="logo"></a>
+                    <a href="#"><img  class="logo-blue" src="./image/logo.png" alt="logo"></a>
+                    <a href="#"><img  class="logo-white" src="./image/logo2.png" alt=""></a>
                 </div>
 
                 <div class="hamburger">
@@ -60,7 +61,8 @@
                     <ul>
                         <li>
                             <a href="#">HOME <img class="down-arrow" src="./image/down-arrow.png" alt="down-arrow"> <img
-                                    class="down-arrow-blue" src="./image/down-arrow-blue.png" alt="down-arrow-blue"></a>
+                                    class="down-arrow-blue" src="./image/down-arrow-blue.png" alt="down-arrow-blue">
+                                <img class="down-arrow-white" src="./image/down-arrow-white.png" alt="arrows"></a>
 
 
                             <ul>
@@ -91,7 +93,8 @@
                         <li>
                             <a href="#">GALLERY <img class="down-arrow" src="./image/down-arrow.png" alt="down-arrow">
                                 <img class="down-arrow-blue" src="./image/down-arrow-blue.png"
-                                    alt="down-arrow-blue"></a>
+                                    alt="down-arrow-blue">
+                                    <img class="down-arrow-white" src="./image/down-arrow-white.png" alt="arrows"></a>
                             <ul>
                                 <li>
                                     <a href="#">Gallery
@@ -131,7 +134,8 @@
                         </li>
                         <li>
                             <a href="#">BLOG <img class="down-arrow" src="./image/down-arrow.png" alt="down-arrow"> <img
-                                    class="down-arrow-blue" src="./image/down-arrow-blue.png" alt="down-arrow-blue"></a>
+                                    class="down-arrow-blue" src="./image/down-arrow-blue.png" alt="down-arrow-blue">
+                                 <img class="down-arrow-white" src="./image/down-arrow-white.png" alt="arrows"></a>
                             <ul>
                                 <li>
                                     <a href="#">Blog Crid
@@ -177,10 +181,10 @@
     </div>
 
 
-    <section class="slider-img">
+    <section class="slider-img fadeInUp2 hidden visible animated fadeInUp">
         <img src="image/slider-img.png" alt="slider-img">
-        <div class="container">
-            <div class="slider-text">
+        <div class="container ">
+            <div class="slider-text ">
                 <h1>WE ARE CREATIVE AGENCY</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -202,7 +206,7 @@
     </section>
 
 
-    <section class="we-do">
+    <section class="we-do  fadeInUp2 hidden visible animated fadeInUp">
         <div class="container">
             <h2>
                 WHAT <span>WE DO ?</span>
@@ -285,7 +289,7 @@
 
 
 
-    <section class="services-background">
+    <section class="services-background  fadeInUp2 hidden visible animated fadeInUp ">
         <div class="container">
             <div class="services-text">
                 <h2>
@@ -375,7 +379,7 @@
         </div>
     </section>
 
-    <section class="">
+    <section class=" fadeInUp2 hidden visible animated fadeInUp">
         <div class="protfolio">
             <h2>
                 OUR <span>PORTFOLIO</span>
@@ -494,7 +498,7 @@
     </section>
 
 
-    <section class="container">
+    <section class="container  fadeInUp2 hidden visible animated fadeInUp">
         <div class="team">
             <h2>
                 OUR <span>TEAM</span>
@@ -679,7 +683,7 @@
     </section>
 
 
-    <section class="friend-background">
+    <section class="friend-background  fadeInUp2 hidden visible animated fadeInUp">
         <div class="container">
             <ul>
                 <li>
@@ -723,7 +727,7 @@
     </section>
 
 
-    <section class="pricing">
+    <section class="pricing fadeInUp2 hidden visible animated fadeInUp">
         <div class="container">
             <h2>
                 OUR <span>PRICING</span>
@@ -844,7 +848,7 @@
         </div>
     </section>
 
-    <section class="happy-client-background">
+    <section class="happy-client-background fadeInUp2 hidden visible animated fadeInUp">
         <div class="container">
             <h2>
                 HAPPY CLINET
@@ -925,7 +929,7 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container fadeInUp2 hidden visible animated fadeInUp">
         <div class="blog">
             <h2>
                 OUR
@@ -1188,7 +1192,7 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container fadeInUp2 hidden visible animated fadeInUp">
         <div class="sponsors">
             <h2>
                 OUR <span> SPONSORS</span>
@@ -1682,6 +1686,22 @@ counters.forEach((counter) => {
   };
   updateCounter();
 });
+
+
+
+//animated page effects
+jQuery(document).ready(function () {
+            jQuery('.animation').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated fadeIn',
+                offset: 100
+            });
+
+            jQuery('.fadeInUp2').addClass("hidden").viewportChecker({
+                classToAdd: 'visible animated fadeInUp',
+                offset: 100
+            });
+
+        });
 
     </script>
 </body>

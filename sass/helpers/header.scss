@@ -64,10 +64,31 @@
         border-bottom: none;
     
         .header {
+.logo{
+
+
+            a{
+                .logo-white{
+                    display: block;
+                }
+                .logo-blue{
+                    display: none;
+                }
+            }
+        }
             .menu {
                 > ul {
                     > li {
-
+                        .down-arrow-white{
+                            display: block;
+                        }
+                       a{
+                     
+                        .down-arrow {
+                            display: none;
+                       
+                       }
+                       }
                         .white-search{
                             width: 24px;
                             display: block;
@@ -93,7 +114,10 @@
 
             a {
                 img {
-                    width: 100%;
+                    width: 120px;
+                }
+                .logo-white{
+                    display: none;
                 }
             }
         }
@@ -146,6 +170,7 @@
                             font-size: 16px;
                             font-weight: 400;
                             line-height: 30px;
+
                         }
 
                         &:hover a {
@@ -159,11 +184,16 @@
 
 
 
-
+              
                 &:hover .down-arrow-blue {
                     display: block;
                 }
-
+.down-arrow-white{
+    display: none;
+}
+&:hover .down-arrow-white{
+    display: none;
+}
                 &:hover .down-arrow {
                     display: none;
                 }
