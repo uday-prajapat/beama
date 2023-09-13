@@ -1165,6 +1165,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .blog ul li:not(ol li) .blog-text .human-icon ol li {
   padding-right: 15px;
@@ -2217,6 +2220,15 @@ a {
   }
   .blog ul li {
     width: 100%;
+  }
+  .blog ul li:not(ol li) {
+    margin: 0;
+  }
+  .blog ul li:not(ol li) .blog-text .human-icon ol li {
+    padding-right: 0;
+  }
+  .blog ul li:not(ol li) .blog-text .human-icon ol li a h4 {
+    font-size: 11px;
   }
   .sponsors h2 {
     font-size: 25px;

@@ -222,6 +222,23 @@ padding: 10px 0;
         flex-direction: column;
         li{
             width: 100%;
+            &:not(ol li){
+                margin: 0;
+                .blog-text{
+    .human-icon{
+        ol{
+            li{
+                padding-right: 0;
+                a{
+                    h4{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+                }
+            }
         }
     }
 }
