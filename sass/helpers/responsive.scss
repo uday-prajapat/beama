@@ -6,6 +6,9 @@
 
 
     .top-header-background {
+        .container{
+            padding: 0;
+        }
         .top-header{
             flex-direction: column;
             .address{
@@ -16,9 +19,28 @@
 
     .header-background {
 padding: 10px 0;
+&.fixed-header{
+    .header{
+
+        .hamburger{
+            .hamburger-black-icon{
+                display: none;
+            }
+            .hamburger-white-icon{
+                display: block;
+            }
+        }
+    }
+}
         .header {
             .hamburger {
                 display: block;
+
+             
+                    .hamburger-white-icon{
+                        display: none;
+                    }
+               
             }
 
            
@@ -219,14 +241,21 @@ padding: 10px 0;
         width: 90%;
     }
     ul{
+  
+        
         flex-direction: column;
+        
         li{
             width: 100%;
+            margin: 0;
             &:not(ol li){
+          
+
                 margin: 0;
                 .blog-text{
     .human-icon{
         ol{
+            
             li{
                 padding-right: 0;
                 a{

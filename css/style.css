@@ -2008,6 +2008,9 @@ a {
     width: 100%;
     padding: 0 15px;
   }
+  .top-header-background .container {
+    padding: 0;
+  }
   .top-header-background .top-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2020,8 +2023,17 @@ a {
   .header-background {
     padding: 10px 0;
   }
+  .header-background.fixed-header .header .hamburger .hamburger-black-icon {
+    display: none;
+  }
+  .header-background.fixed-header .header .hamburger .hamburger-white-icon {
+    display: block;
+  }
   .header-background .header .hamburger {
     display: block;
+  }
+  .header-background .header .hamburger .hamburger-white-icon {
+    display: none;
   }
   .header-background .header .menu {
     width: 75%;
@@ -2220,6 +2232,7 @@ a {
   }
   .blog ul li {
     width: 100%;
+    margin: 0;
   }
   .blog ul li:not(ol li) {
     margin: 0;
