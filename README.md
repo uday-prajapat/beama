@@ -1,2 +1,1 @@
-# beama-website
-# beama
+# website
